@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #e2e8f0;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background: #111827;
+  border-bottom: 2px solid #1f2937;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #38bdf8;
+}
+
+header p {
+  margin-top: 10px;
+  color: #cbd5e1;
+}
+
+/* CONTENU */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+/* CARTES */
+.card {
+  background: #111827;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border: 1px solid #1f2937;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: #38bdf8;
+}
+
+/* TITRES */
+.card h2 {
+  margin-top: 0;
+  color: #93c5fd;
+}
+
+/* TEXTE */
+.card p {
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* LISTES */
+.card ul {
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 6px;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #111827;
+  border-top: 2px solid #1f2937;
+  margin-top: 40px;
+  color: #94a3b8;
+}

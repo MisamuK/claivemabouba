@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Cloud Computing</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+</head>
+
+<body>
+
+    <!-- Fond vidéo -->
+    <video class="background-video" autoplay muted loop>
+        <source src="../IMAGES ET VIDEOS/Computing.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay sombre -->
+    <div class="overlay"></div>
+
+    <!-- Contenu -->
+    <div class="container">
+
+        <header class="header">
+
+    <div class="logo">Cloud Computing</div>
+
+    <!-- bouton burger -->
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav class="nav" id="navMenu">
+        <a href="Accueil.html">Accueil</a>
+        <a href="Article.html">Articles</a>
+        <a href="Synthese.html">Synthèse</a>
+        <a href="Sources.html">Sources</a>
+    </nav>
+
+</header>
+
+        <main class="content">
+    <h2>Bienvenue</h2>
+    <p>Découvrez le monde du cloud computing</p>
+    <button onclick="askName()">Commencer</button>
+</main>
+
+        <footer class="footer">
+            <p><strong>Claive Mabouba</strong> — BTS SIO</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function askName() {
+    const prenom = prompt("Entrez votre prénom :");
+
+    if (prenom) {
+        const content = document.querySelector(".content");
+
+        content.innerHTML = `
+            <h2>Bienvenue ${prenom}</h2>
+            <p>Chargement du site Cloud Computing...</p>
+        `;
+
+        setTimeout(() => {
+            window.location.href = "Article.html";
+        }, 2000);
+    }
+}
+    </script>
+
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("active");
+}
+</script>
+</body>
+</html>

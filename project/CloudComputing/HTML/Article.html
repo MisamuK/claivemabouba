@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+</head>
+
+<body>
+
+    <!-- Fond vidéo -->
+    <video class="background-video" autoplay muted loop>
+        <source src="../IMAGES ET VIDEOS/Computing.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay sombre -->
+    <div class="overlay"></div>
+
+    <!-- Contenu -->
+    <div class="container">
+
+        <header class="header">
+
+    <div class="logo">Cloud Computing</div>
+
+    <!-- bouton burger -->
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav class="nav" id="navMenu">
+        <a href="Accueil.html">Accueil</a>
+        <a href="Article.html">Articles</a>
+        <a href="Synthese.html">Synthèse</a>
+        <a href="Sources.html">Sources</a>
+    </nav>
+
+</header>
+
+    <!-- Titre -->
+    <h2 class="page-title">Les Articles</h2>
+
+    <!-- Grid articles -->
+    <main class="articles-grid">
+
+        <a href="Article 1.html" class="card">
+            <img src="../IMAGES ET VIDEOS/Design Art 1.png" alt="Article 1">
+            <span>Article 1</span>
+        </a>
+
+        <a href="Article 2.html" class="card">
+            <img src="../IMAGES ET VIDEOS/Design Art 2.png" alt="Article 2">
+            <span>Article 2</span>
+        </a>
+
+        <a href="Article 3.html" class="card">
+            <img src="../IMAGES ET VIDEOS/Design Art 3.png" alt="Article 3">
+            <span>Article 3</span>
+        </a>
+
+        <a href="Article 4.html" class="card">
+            <img src="../IMAGES ET VIDEOS/Design Art 4.png" alt="Article 4">
+            <span>Article 4</span>
+        </a>
+
+    </main>
+
+    <script>
+function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("active");
+}
+</script>
+</body>
+</html>

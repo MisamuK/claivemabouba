@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 2</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+</head>
+
+<body>
+
+    <!-- Fond vidéo -->
+    <video class="background-video" autoplay loop muted>
+        <source src="../IMAGES ET VIDEOS/Computing.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- HEADER IDENTIQUE -->
+    <header class="header">
+
+        <div class="logo">Articles</div>
+
+        <nav class="nav" id="navMenu">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Article.html">Articles</a>
+            <a href="Synthese.html">Synthèse</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+    </header>
+
+    <!-- CONTENU -->
+    <main class="article-container">
+
+        <h1>Article 2</h1>
+
+        <a href="https://www.geekosphere.fr/evolutions-techniques-du-cloud-comment-ont-elles-permis-son-developpement/"
+           target="_blank"
+           class="article-image">
+
+            <img src="../IMAGES ET VIDEOS/Design Art 2.png" alt="Article 2">
+        </a>
+
+        <div class="article-text">
+
+            <p>
+                Le cloud computing s’est imposé grâce à une succession d’innovations qui ont transformé
+                l’informatique moderne.
+            </p>
+
+            <p>
+                Le véritable tournant arrive avec des services comme <strong>Amazon Web Services (AWS)</strong> en 2006,
+                qui permettent d’accéder à des ressources informatiques à la demande.
+            </p>
+
+            <p>
+                Cela rend la puissance de calcul accessible à tous, sans infrastructure lourde sur site,
+                et change complètement la manière de concevoir les systèmes informatiques.
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- JS menu mobile -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

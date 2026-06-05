@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 4</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+</head>
+
+<body>
+
+    <!-- Fond vidéo -->
+    <video class="background-video" autoplay loop muted>
+        <source src="../IMAGES ET VIDEOS/Computing.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- HEADER identique partout -->
+    <header class="header">
+
+        <div class="logo">Articles</div>
+
+        <nav class="nav" id="navMenu">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Article.html">Articles</a>
+            <a href="Synthese.html">Synthèse</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+    </header>
+
+    <!-- CONTENU -->
+    <main class="article-container">
+
+        <h1>Article 4</h1>
+
+        <a href="https://www.geekosphere.fr/evolutions-techniques-du-cloud-comment-ont-elles-permis-son-developpement/"
+           target="_blank"
+           class="article-image">
+
+            <img src="../IMAGES ET VIDEOS/Design Art 4.png" alt="Article 4">
+        </a>
+
+        <div class="article-text">
+
+            <p>
+                L’adoption massive du cloud computing transforme profondément les organisations,
+                notamment sur le plan économique et organisationnel.
+            </p>
+
+            <p>
+                Grâce à la mutualisation des ressources et à la facturation à l’usage,
+                les entreprises optimisent leurs coûts informatiques et gagnent en flexibilité.
+            </p>
+
+            <p>
+                Le stockage à distance permet également un accès permanent aux données et applications,
+                facilitant le travail à distance et la mobilité.
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- JS menu mobile -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

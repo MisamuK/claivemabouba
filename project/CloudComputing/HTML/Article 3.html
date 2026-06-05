@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 3</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+</head>
+
+<body>
+
+    <!-- Fond vidéo -->
+    <video class="background-video" autoplay loop muted>
+        <source src="../IMAGES ET VIDEOS/Computing.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- HEADER identique -->
+    <header class="header">
+
+        <div class="logo">Articles</div>
+
+        <nav class="nav" id="navMenu">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Article.html">Articles</a>
+            <a href="Synthese.html">Synthèse</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+    </header>
+
+    <!-- CONTENU -->
+    <main class="article-container">
+
+        <h1>Article 3</h1>
+
+        <a href="https://www.infosectrain.com/blog/cloud-computing-roles-and-responsibilities/"
+           target="_blank"
+           class="article-image">
+
+            <img src="../IMAGES ET VIDEOS/Design Art 3.png" alt="Article 3">
+        </a>
+
+        <div class="article-text">
+
+            <p>
+                Le cloud computing repose sur différents rôles essentiels qui assurent le bon fonctionnement
+                des infrastructures cloud.
+            </p>
+
+            <p>
+                On retrouve notamment les <strong>architectes cloud</strong>, les <strong>ingénieurs sécurité</strong>,
+                les <strong>administrateurs cloud</strong> et les spécialistes en conformité.
+            </p>
+
+            <p>
+                Ces rôles permettent de garantir la gestion, la sécurité et la conformité des données
+                dans les environnements cloud modernes.
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- JS menu mobile -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

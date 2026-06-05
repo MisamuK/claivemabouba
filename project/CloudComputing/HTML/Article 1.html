@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article 1</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+</head>
+
+<body>
+
+    <!-- Fond vidéo -->
+    <video class="background-video" autoplay loop muted>
+        <source src="../IMAGES ET VIDEOS/Computing.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <!-- HEADER (identique partout) -->
+    <header class="header">
+
+        <div class="logo">Articles</div>
+
+        <nav class="nav" id="navMenu">
+            <a href="Accueil.html">Accueil</a>
+            <a href="Article.html">Articles</a>
+            <a href="Synthese.html">Synthèse</a>
+            <a href="Sources.html">Sources</a>
+        </nav>
+
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+    </header>
+
+    <!-- CONTENU -->
+    <main class="article-container">
+
+        <h1>Article 1</h1>
+
+        <a href="https://azure.microsoft.com/fr-fr/resources/cloud-computing-dictionary/what-is-cloud-computing"
+           target="_blank"
+           class="article-image">
+
+            <img src="../IMAGES ET VIDEOS/Design Art 1.png" alt="Cloud Computing">
+        </a>
+
+        <div class="article-text">
+
+            <p>
+                Le cloud computing est la pratique d’obtenir des services informatiques tels que le stockage,
+                les serveurs, les bases de données et les logiciels via Internet.
+            </p>
+
+            <p>
+                Il existe trois types principaux de cloud :
+                <strong>public</strong>, <strong>privé</strong> et <strong>hybride</strong>.
+                Chaque modèle permet une gestion différente des ressources selon les besoins.
+            </p>
+
+            <p>
+                Ces solutions permettent aux entreprises d’adapter leurs infrastructures,
+                de réduire les coûts et d’améliorer la flexibilité.
+            </p>
+
+        </div>
+
+    </main>
+
+    <!-- JS menu mobile -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

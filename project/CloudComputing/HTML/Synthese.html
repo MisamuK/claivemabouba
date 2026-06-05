@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthèse</title>
+    <link rel="stylesheet" href="../CSS/Main.css">
+</head>
+
+<body>
+
+    <!-- Fond vidéo -->
+    <video class="background-video" autoplay muted loop>
+        <source src="../IMAGES ET VIDEOS/Computing.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlay sombre -->
+    <div class="overlay"></div>
+
+    <!-- Contenu -->
+    <div class="container">
+
+        <header class="header">
+
+    <div class="logo">Cloud Computing</div>
+
+    <!-- bouton burger -->
+    <div class="burger" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav class="nav" id="navMenu">
+        <a href="Accueil.html">Accueil</a>
+        <a href="Article.html">Articles</a>
+        <a href="Synthese.html">Synthèse</a>
+        <a href="Sources.html">Sources</a>
+    </nav>
+
+</header>
+
+    <!-- Contenu -->
+    <main class="synthese-container">
+
+        <h2>Comprendre le Cloud Computing</h2>
+
+        <p>
+            Le cloud computing est la mise en œuvre du stockage, de la gestion et du traitement des données sur des serveurs distants via Internet.
+            Au lieu d’utiliser une infrastructure physique locale, les utilisateurs accèdent à des ressources informatiques à la demande.
+        </p>
+
+        <p>
+            Ce modèle offre une grande flexibilité : les entreprises peuvent réduire leurs coûts, s’adapter rapidement aux besoins du marché et bénéficier de mises à jour automatiques de sécurité.
+        </p>
+
+        <p>
+            Il existe différents types de cloud : <strong>public</strong>, <strong>privé</strong> et <strong>hybride</strong>,
+            chacun répondant à des besoins spécifiques en matière de sécurité et de gestion des données.
+        </p>
+
+    </main>
+
+    <script>
+function toggleMenu() {
+    const nav = document.getElementById("navMenu");
+    nav.classList.toggle("active");
+}
+</script>
+</body>
+</html>

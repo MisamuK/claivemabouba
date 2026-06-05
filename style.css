@@ -26,12 +26,23 @@ header{
     z-index: 1000;
 }
 
-.logo{
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-wrap: nowrap;
+.logo {
+    display: flex;
+    align-items: center;
     transition: 0.3s ease-in-out;
+}
+
+.logo img {
+    height: 40px;      /* taille du logo */
+    width: auto;
+    object-fit: contain;
+    filter: brightness(1.2); /* rend le blanc plus visible */
+    transition: 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.5);
 }
 
 .logo:hover{

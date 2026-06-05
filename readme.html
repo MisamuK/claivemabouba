@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Chat Temps Réel - Explication</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+    padding: 30px;
+}
+
+h1, h2 {
+    color: #60a5fa;
+}
+
+.card {
+    background: #111827;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+code {
+    background: #1f2937;
+    padding: 3px 6px;
+    border-radius: 5px;
+}
+
+/* bouton */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 18px;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #2563eb;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>💬 Chat Temps Réel (Node.js + Socket.io)</h1>
+
+<div class="card">
+<p>
+Ce projet est un chat en temps réel permettant à plusieurs utilisateurs de discuter instantanément grâce à un serveur Node.js et WebSocket (Socket.io).
+</p>
+</div>
+
+<h2>🚀 Comment utiliser le projet</h2>
+
+<div class="card">
+<h3>🟢 Version locale (chez toi)</h3>
+
+<ul>
+    <li>Lancer le serveur avec <code>node server.js</code></li>
+    <li>Ouvrir sur ton PC : <code>http://localhost:3000</code></li>
+    <li>Ouvrir sur ton téléphone (même Wi-Fi) :</li>
+    <li><code>http://192.168.x.x:3000</code></li>
+</ul>
+
+<p><b>Exemple concret :</b></p>
+
+<ul>
+    <li>PC : <code>http://localhost:3000</code></li>
+    <li>Téléphone (même Wi-Fi) : <code>http://192.168.1.118:3000</code></li>
+</ul>
+
+<p>
+⚠️ Important : le PC et le téléphone doivent être sur le même réseau Wi-Fi.
+</p>
+
+</div>
+
+<div class="card">
+<h3>🌍 Version en ligne (Internet)</h3>
+
+<p>
+Le chat peut aussi être hébergé sur Internet. Ici nous avons utilisé Render qui est gratuit pour ce type de déploiement.
+Dans ce cas, n’importe qui peut s’y connecter depuis le monde entier.
+</p>
+
+<p><b>Exemple :</b></p>
+
+<code>https://chat-reseau.onrender.com</code>
+
+<br>
+
+<a class="btn" href="https://chat-reseau.onrender.com" target="_blank">
+💬 Commencer le chat
+</a>
+
+<p>
+👉 Clique sur le bouton pour accéder directement au chat en ligne.
+</p>
+
+</div>
+
+<h2>⚙️ Comment ça marche</h2>
+
+<div class="card">
+<ul>
+    <li>Le serveur Node.js gère les connexions des utilisateurs</li>
+    <li>Socket.io permet la communication en temps réel</li>
+    <li>Chaque message est envoyé instantanément à tous les utilisateurs connectés</li>
+</ul>
+</div>
+
+<h2>💡 Différence entre local et en ligne</h2>
+
+<div class="card">
+<p><b>Local :</b> utilisé pour tester sur ton réseau Wi-Fi personnel</p>
+<p><b>En ligne :</b> accessible partout sur Internet 24h/24</p>
+</div>
+
+<h2>🔥 Fonctionnalités</h2>
+
+<div class="card">
+<ul>
+    <li>💬 Chat en temps réel</li>
+    <li>👤 Gestion des utilisateurs</li>
+    <li>🟢 Notifications connexion / déconnexion</li>
+    <li>📱 Compatible mobile et PC</li>
+</ul>
+</div>
+
+</div>
+
+</body>
+</html>
